@@ -3,6 +3,13 @@ import csv
 
 df = pd.read_csv("total_star.csv")
 del df["Luminosity"]
+del df["Star_name"]
+del df["Distance"]
+del df["Mass"]
+del df["Radius"]
+del df["Unnamed: 0"]
+del df["Unnamed: 6"]
+
 df.to_csv("main.csv")
 
 print(df.shape)
