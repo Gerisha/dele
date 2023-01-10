@@ -13,6 +13,7 @@ df.dropna()
 
 
 df.to_csv("main.csv")
+df.reset_index(drop=True,inplace = True)
 
 print(df.shape)
 print(list(df))
